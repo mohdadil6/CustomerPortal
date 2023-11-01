@@ -1,0 +1,33 @@
+/* Contact.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #000; /* Set text color to black for better visibility on light background */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.contact-card {
+text-align: center;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+flex-basis: calc(33.33% - 20px); /* Adjust the width of each card */
+margin: 0 10px; /* Add some space between cards */
+}
+
+.contact-icon {
+font-size: 24px;
+}
+
+/* Add any other styles you need */
