@@ -1,40 +1,48 @@
 import React from 'react';
-import { Navbar, Nav, Button } from 'react-bootstrap';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'; // Import social media icons
+import './CFooter.css';
 
 function CFooter() {
   return (
-    <Navbar bg="light" variant="light" className="footer">
-      <Nav className="ml-auto">
-        <Nav.Link href="#privacy-policy">Privacy Policy</Nav.Link>
-        <Nav.Link href="#terms-of-service">Terms of Service</Nav.Link>
-        <Nav.Link href="#copyright">© 2023 SeamEx</Nav.Link>
-        <Button
-          onClick={() => window.open("https://www.facebook.com/your-facebook-profile", "_blank")}
-          variant="link"
+    <div className="footer">
+      <div className="footer-links">
+        <a href="#privacy-policy">Privacy Policy</a>
+        <a href="#terms-of-service">Terms of Service</a>
+      </div>
+      <div className="footer-copyright">
+        &copy; 2023 SeamEx
+      </div>
+      <div className="footer-social">
+        <a
+          href="https://www.facebook.com/your-facebook-profile"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <FaFacebook /> Facebook
-        </Button>
-        <Button
-          onClick={() => window.open("https://twitter.com/your-twitter-profile", "_blank")}
-          variant="link"
+          <FaFacebook />
+        </a>
+        <a
+          href="https://twitter.com/your-twitter-profile"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <FaTwitter /> Twitter
-        </Button>
-        <Button
-          onClick={() => window.open("https://www.instagram.com/your-instagram-profile", "_blank")}
-          variant="link"
+          <FaTwitter />
+        </a>
+        <a
+          href="https://www.instagram.com/your-instagram-profile"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <FaInstagram /> Instagram
-        </Button>
-        <Button
-          onClick={() => window.open("https://www.linkedin.com/in/your-linkedin-profile", "_blank")}
-          variant="link"
+          <FaInstagram />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/your-linkedin-profile"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <FaLinkedin /> LinkedIn
-        </Button>
-      </Nav>
-    </Navbar>
+          <FaLinkedin />
+        </a>
+      </div>
+    </div>
   );
 }
 
