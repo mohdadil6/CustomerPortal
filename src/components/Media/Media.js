@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Media.css';
-import useCustomCursor from './useCustomCursor.js';
+import CustomCursor from './CustomCursor'; // Import the custom cursor component
 
-
-function Media(){
-  
+function Media() {
+  <CustomCursor/>
   return (
     <div>
       <h1>Welcome to Media</h1>
@@ -34,7 +33,6 @@ function Media(){
             </p>
           </div>
         </div>
-
         <div className="cursor" id="cursor" />
         <div className="cursor2" id="cursor2" />
         <div className="cursor3" id="cursor3" />

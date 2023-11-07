@@ -2,20 +2,26 @@
 
 /* #Primary
 ================================================== */
-
+/* Add this CSS class to your stylesheet */
+.slow-open {
+    transition: max-height 0.3s ease; /* Adjust duration and easing */
+    max-height: 1000px; /* Set a sufficiently large value to allow for animation */
+    overflow: hidden;
+  }
+  
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    color: #212112;
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
-    background-position: center;
+    /* color: #212112; */
+    /* background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg'); */
+    /* background-position: center;
     background-repeat: repeat;
-    background-size: 7%;
-    background-color: #fff;
-    overflow-x: hidden;
-    transition: all 200ms linear;
+    background-size: 7%; */
+    /* background-color: #fff;
+    overflow-x: hidden; */
+    /* transition: all 200ms linear; */
 }
 
 ::selection {
@@ -66,6 +72,7 @@ body {
 
 .navbar {
     padding: 0;
+    /* height: 100px; */
 }
 
 .navbar-brand img {
@@ -130,17 +137,18 @@ body {
 }
 
 .nav-link {
-    color: #212121 !important;
+    color: #faf7f7 !important;
     font-weight: 500;
     transition: all 200ms linear;
-    /* Navbar.css */
-    margin-right: 20px; /* Adjust the margin value as needed */  
+font-size: medium; 
+
+margin-right: 20px; /* Adjust the margin value as needed */  
 }
 
-.nav-link:hover  {
+/* .nav-link:hover  {
     color: #8167a9 !important;
     
-}
+} */
 
 .nav-item.active .nav-link {
     color: #777 !important;
@@ -435,6 +443,7 @@ body.hero-anime #switch {
     padding: 0;
     margin: 0;
     transition: all 200ms linear;
+    background-color: #ac1c1c;
 }
 
 .nav-item.show .dropdown-menu {
@@ -449,8 +458,8 @@ body.hero-anime #switch {
     margin: 0;
     font-size: 13px;
     letter-spacing: 1px;
-    color: #212121;
-    background-color: #fcfaff;
+    color: #fdfbfb;
+    background-color: #d37231;
     border: none;
     border-radius: 3px;
     box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);

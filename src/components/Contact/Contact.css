@@ -24,7 +24,35 @@ border: 1px solid #ccc;
 border-radius: 5px;
 flex-basis: calc(33.33% - 20px); /* Adjust the width of each card */
 margin: 0 10px; /* Add some space between cards */
+}/* Add this CSS code to your Contact.css file */
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
 }
+
+.contact-card {
+  flex: 1;
+  max-width: calc(33.33% - 1rem); /* Three cards per row with 1rem gap in between */
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .contact-card {
+    max-width: calc(50% - 1rem); /* Two cards per row on screens <= 1200px */
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-card {
+    max-width: 100%; /* Single card per row on screens <= 768px */
+  }
+}
+
+/* Adjust these values as needed to fine-tune the responsiveness. */
+
 
 .contact-icon {
 font-size: 24px;

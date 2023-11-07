@@ -18,28 +18,28 @@ function CFooter() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaFacebook />
+          <FaFacebook style={{ fontSize: '18px', color: 'white' }} />
         </a>
         <a
           href="https://twitter.com/your-twitter-profile"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaTwitter />
+          <FaTwitter style={{ fontSize: '18px', color: 'white' }} />
         </a>
         <a
           href="https://www.instagram.com/your-instagram-profile"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaInstagram />
+          <FaInstagram style={{ fontSize: '18px', color: 'white' }} />
         </a>
         <a
           href="https://www.linkedin.com/in/your-linkedin-profile"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaLinkedin />
+          <FaLinkedin style={{ fontSize: '18px', color: 'white' }} />
         </a>
       </div>
     </div>

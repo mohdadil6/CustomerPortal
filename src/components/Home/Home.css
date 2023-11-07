@@ -9,7 +9,7 @@
  * ========================================= */
  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
 
- body{
+ /* body{
      font-family: 'Poppins', sans-serif;
      font-weight: 300;
      font-size: 15px;
@@ -61,20 +61,20 @@
    box-sizing: border-box;
    -webkit-transition: all 0.2s ease;
    transition: all 0.2s ease;
-   background-image: url('https://assets.codepen.io/1462889/sl1.jpg');
+   background-image: url('https://img.freepik.com/free-photo/business-brainstorming-graph-chart-report-data-concept_53876-31213.jpg?w=740&t=st=1699286098~exp=1699286698~hmac=6a2336a91762a408dda3220a13d30c130837cdcfaa6214f0d64ef1fefd6788eb');
    animation: border-transform 6s linear infinite alternate forwards;
      -webkit-animation-play-state: paused;
      -moz-animation-play-state: paused;
      animation-play-state: paused;
  }
  .checkbox.scnd + label{
-   background-image: url('https://assets.codepen.io/1462889/sl2.jpg');
+   background-image: url('https://www.adityabirla.com/Upload/Images/thumbnail/greening-the-future.jpg');
  }
  .checkbox.thrd + label{
-   background-image: url('https://assets.codepen.io/1462889/sl3.jpg');
+   background-image: url('https://www.adityabirla.com/Upload/Images/thumbnail/waste-to-value-sm.jpg');
  }
  .checkbox.foth + label{
-   background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
+   background-image: url('https://www.adityabirla.com/Upload/Images/thumbnail/kmb-my-reflections-2022.jpg');
  }
  
  .checkbox:checked + label{
@@ -123,7 +123,7 @@
    border: 5px solid #bdc3c7;
    background-size: cover;
    background-position: center;
-   background-image: url('https://assets.codepen.io/1462889/sl1.jpg');
+   background-image: url('https://img.freepik.com/free-photo/business-brainstorming-graph-chart-report-data-concept_53876-31213.jpg?w=740&t=st=1699286098~exp=1699286698~hmac=6a2336a91762a408dda3220a13d30c130837cdcfaa6214f0d64ef1fefd6788eb');
    border-radius: 50%;
    box-sizing: border-box;
    font-family: 'Poppins', sans-serif;
@@ -143,14 +143,14 @@
    mix-blend-mode: difference;
  }
  ul li:nth-child(2) {
-   background-image: url('https://assets.codepen.io/1462889/sl2.jpg');
- }
+  background-image: url('https://www.adityabirla.com/Upload/Images/thumbnail/greening-the-future.jpg');
+}
  ul li:nth-child(3) {
-   background-image: url('https://assets.codepen.io/1462889/sl3.jpg');
- }
+  background-image: url('https://www.adityabirla.com/Upload/Images/thumbnail/waste-to-value-sm.jpg');
+}
  ul li:nth-child(4) {
-   background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
- }
+  background-image: url('https://www.adityabirla.com/Upload/Images/thumbnail/kmb-my-reflections-2022.jpg');
+}
  
  
  .checkbox.frst:checked ~ ul li:nth-child(1) {
@@ -208,9 +208,85 @@
    ul li {
      height: 200px;
    }
- }
+ } */
 
 
  /* Adil */
+ .banner-slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 1000px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.banner-slider-container img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover; /* This will ensure the image covers the entire space without stretching */
+}
 
- 
+.carousel .control-prev,
+.carousel .control-next {
+  bottom: 1%;
+  /* Adjust this value as needed */
+}
+
+/* Set left and right padding to 10% */
+.banner-slider-container::before,
+.banner-slider-container::after {
+  content: "";
+  width: 5%;
+  flex-shrink: 0;
+}
+/* External CSS file for the Login Form */
+.login-card {
+  flex: 0 0 30%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  
+}
+
+.login-card h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button-container {
+  position: absolute;
+  top: 112px;
+  right: 0;
+  margin: 10px;
+}

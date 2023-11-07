@@ -1,174 +1,45 @@
 import React from 'react';
-import 'font-awesome/css/font-awesome.min.css';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
-import Grid from '@mui/material/Grid';
-import './Contact.css';
-import calling from '../../assets/calling.jpg';
-import email from '../../assets/email.jpg';
-import insta from '../../assets/insta.jpg';
+import EnquiryForm from '../EnquiryForm/EnquiryForm';
 
-function Contact() {
-  return (<>
-    <Grid container spacing={2}>
-      <Grid item xs={12} sm={6} md={3}>
-        <Card sx={{ maxWidth: 345 }}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="140"
-              image="https://source.unsplash.com/random/300x351/?artist,entertainmentMusician,Bands,StandupComedian,ScratchArtist,MakeupArtist,Anchors,DJ's,HairArtist,FolkArtist,MehndiArtist,Coreographers"
-              alt="Artist & Entertainment"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Lorem ipsum
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Ut eiusmod consectetur quis excepteur pariatur labore duis commodo. Velit et qui culpa deserunt.
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-      </Grid>
-
-      
-        <Grid item xs={12} sm={6} md={3}>
-          <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image="https://source.unsplash.com/random/300x351/?scenery,view"
-                alt="Artist & Entertainment"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Lorem ipsum
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Ut eiusmod consectetur quis excepteur pariatur labore duis commodo. Velit et qui culpa deserunt.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        </Grid>
-
-    
-          <Grid item xs={12} sm={6} md={3}>
-            <Card sx={{ maxWidth: 345 }}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image="https://source.unsplash.com/random/300x351/?plants,office,books"
-                  alt="Artist & Entertainment"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    Lorem ipsum
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    Ut eiusmod consectetur quis excepteur pariatur labore duis commodo. Velit et qui culpa deserunt.
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-         
-            <Grid item xs={12} sm={6} md={3}>
-              <Card sx={{ maxWidth: 345 }}>
-                <CardActionArea>
-                  <CardMedia
-                    component="img"
-                    height="140"
-                    image="https://source.unsplash.com/random/300x351/?working,staff,group"
-                    alt="Artist & Entertainment"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Lorem ipsum
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Ut eiusmod consectetur quis excepteur pariatur labore duis commodo. Velit et qui culpa deserunt.
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-            </Grid>
-          </Grid>
-
-
-          <div className="contact-container">
-        <div className="contact-card">
-          <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={calling}
-                alt="Phone"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Phone
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Call us at <a href="tel:+918359900835">+91 835 9900 835</a>
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
+function ContactUs() {
+  return (
+    <>
+      <h2>Contact Us</h2>
+      <EnquiryForm />
+      <div className="Address" style={{ display: 'flex', justifyContent: 'space-between', padding: '20px' }}>
+        <div className="Address2" style={{ backgroundColor: '#f5f5f5', padding: '20px', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', flex: 1, margin: '10px' }}>
+          <h3 style={{ color: '#d32f2f', fontSize: '18px' }}>Contact Information</h3>
+          <p style={{ fontSize: '14px' }}>
+            <strong style>SeamEx</strong>
+            <br />
+            1401, 14th Floor, Empire Tower, Cloud City Campus, Thane - Belapur Rd, M I, D C
+            <br />
+            Navi Mumbai, Maharashtra 400708
+            <br />
+            Phone: +91 12345 67890
+            <br />
+            Email: info@seamex.com
+          </p>
         </div>
-
-        <div className="contact-card">
-          <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={email}
-                alt="Email"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Email
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Send us an email at <a href="mailto:mo.adil611@gmail.com">mo.adil611@gmail.com</a>
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        </div>
-
-        <div className="contact-card">
-          <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={insta}
-                alt="Instagram"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Instagram
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Follow us on Instagram: <a href="https://instagram.com/">@SeamEx</a>
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
+        <div style={{ backgroundColor: '#f5f5f5', padding: '20px', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', flex: 1, margin: '10px' }}>
+          <h3 style={{ color: '#d32f2f', fontSize: '18px' }}>Social Links</h3>
+          <ul style={{ listStyle: 'none', padding: 0 }}>
+            <li>
+              <a href="#" style={{ textDecoration: 'none', color: '#007bff', fontSize: '14px' }}>LinkedIn</a>
+            </li>
+            <li>
+              <a href="#" style={{ textDecoration: 'none', color: '#007bff', fontSize: '14px' }}>Instagram</a>
+            </li>
+            <li>
+              <a href="https://www.portal.poornata.com/Pages/Home.aspx" rel="noopener noreferrer" target="_blank" style={{ textDecoration: 'none', color: '#007bff', fontSize: '14px' }}>
+                Poornata
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </>
   );
 }
 
-export default Contact;
-
+export default ContactUs;
