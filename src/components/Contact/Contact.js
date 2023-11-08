@@ -1,5 +1,6 @@
 import React from 'react';
 import EnquiryForm from '../EnquiryForm/EnquiryForm';
+import Newsletter from '../Newsletter/Newsletter';
 
 function ContactUs() {
   return (
@@ -10,7 +11,7 @@ function ContactUs() {
         <div className="Address2" style={{ backgroundColor: '#f5f5f5', padding: '20px', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', flex: 1, margin: '10px' }}>
           <h3 style={{ color: '#d32f2f', fontSize: '18px' }}>Contact Information</h3>
           <p style={{ fontSize: '14px' }}>
-            <strong style>SeamEx</strong>
+            <h4 >SeamEx</h4>
             <br />
             1401, 14th Floor, Empire Tower, Cloud City Campus, Thane - Belapur Rd, M I, D C
             <br />
@@ -38,6 +39,7 @@ function ContactUs() {
           </ul>
         </div>
       </div>
+      {/* <Newsletter/> */}
     </>
   );
 }

@@ -14,6 +14,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import Grid from '@mui/material/Grid';
+import Newsletter from '../Newsletter/Newsletter.js';
 function Home() {
   const [showLoginForm, setShowLoginForm] = useState(false);
 
@@ -189,6 +190,7 @@ function Home() {
         <div className="login-button-container">
         <Link to="/contact">
         <button>Raise a request</button>
+       
       </Link>
        {!showLoginForm && (
         <button style={{backgroundColor:showLoginForm ? '#007bff' : '#0056b3'}} onClick={toggleLoginForm}>Login</button>)}

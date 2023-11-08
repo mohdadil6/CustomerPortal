@@ -12,6 +12,7 @@ import Nopage from './components/Nopage/Nopage.js';
 import CNavbar from './components/Navbar/CNavbar.js';
 import CFooter from './components/Footer/CFooter.js';
 import Dashboard from './components/Dashboard/Dashboard.js';
+// import Newsletterpage from './components/Newsletter/Newsletterpage.js';
 // import Testimonials from './components/Testimonials/Testimonials.js';
 function App() {
   const [progress, setProgress] = useState(0);
@@ -36,6 +37,8 @@ function App() {
         <Route path="/media" element={<Media />} />
         <Route path="*" element={<Nopage />} />
         <Route path="/dashboard" element={<Dashboard />}/>
+        {/* <Route path="/newsletter" element={<Newsletterpage />}/> */}
+
         {/* <Route path="/testimonials" element={<Testimonials />}/> */}
 
       </Routes>
