@@ -92,7 +92,7 @@ function CNavbar() {
               Media
             </Nav.Link>
             <NavDropdown title="Services" id="basic-nav-dropdown" onSelect={handleMenuItemClick}>
-              <NavDropdown.Item href="#" className="nav-link">
+              <NavDropdown.Item as={Link} to="/whatwedo" className="nav-link">
                 What we do?
               </NavDropdown.Item>
               <NavDropdown.Item href="#" className="nav-link">

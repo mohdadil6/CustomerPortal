@@ -145,14 +145,14 @@ font-size: medium;
 margin-right: 20px; /* Adjust the margin value as needed */  
 }
 
-/* .nav-link:hover  {
-    color: #8167a9 !important;
+.nav-link:hover  {
+    color: #05020a !important;
     
-} */
-
-.nav-item.active .nav-link {
-    color: #777 !important;
 }
+
+/* .nav-item.active .nav-link {
+    color: #777 ;
+} */
 
 /* .nav-link {
     position: relative;

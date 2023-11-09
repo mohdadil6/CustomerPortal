@@ -6,6 +6,19 @@ import banner1 from '../../assets/banner (1).avif';
 import banner2 from '../../assets/banner (2).avif';
 import banner3 from '../../assets/banner (3).avif';
 import banner4 from '../../assets/banner (4).jpg';
+import HindalcoLogo from '../../assets/Hindalco_Logo.svg';
+import NovelisLogo from '../../assets/Novelis_Logo.png';
+import BirlaCarbonLogo from '../../assets/birla-carbon.png';
+import UltratechLogo from '../../assets/ultratech.jpg';
+import ABFRL from '../../assets/Aditya_Birla_Fashion_and_Retail.png';
+import ABRL from '../../assets/aditya_birla_renewables_limited_logo.jpg';
+import ABC from '../../assets/aditya-birla-chemicals-logo.png';
+import century from '../../assets/century.png';
+import finance from '../../assets/finance.png';
+import grasim from '../../assets/grasim.avif';
+import emil from '../../assets/mining.jpg';
+import trading from '../../assets/trading.jpg';
+import vi from '../../assets/Vodafone_Idea_logo.png';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Card from '@mui/material/Card';
@@ -14,7 +27,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import Grid from '@mui/material/Grid';
-import Newsletter from '../Newsletter/Newsletter.js';
 function Home() {
   const [showLoginForm, setShowLoginForm] = useState(false);
 
@@ -23,7 +35,7 @@ function Home() {
   };
   return (
     <div>
-      <h1>Welcome to the Home Page</h1>
+      <h1>Welcome to the Home Page</h1><br/><br/>
     {/* <div className="section full-height over-hide px-4 px-sm-0">
      
         <div className="row full-height justify-content-center">
@@ -98,7 +110,7 @@ function Home() {
             <img src={banner4} alt="Banner Slide 4" />
           </div>
         </Carousel>
-      </div>
+      </div><br/><br/>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6} md={3}>
           <Card sx={{ maxWidth: 345 }}>
@@ -208,6 +220,27 @@ function Home() {
             <button type="submit">Login</button>
           </form>
         </div>
+      </div>
+      {/* Marquee Section for Our Customers */}
+      <div className="marquee-container">
+        <h2 style={{textAlign:"center"}}>Our Customers</h2>
+        <marquee behavior="scroll" loop direction="left" scrollamount="5">
+          <img src={HindalcoLogo} alt="Hindalco" height={100}/>
+          <img src={NovelisLogo} alt="Novelis" height={100} />
+          <img src={BirlaCarbonLogo} alt="Birla Carbon" height={100} />
+          <img src={UltratechLogo} alt="Ultratech" height={100} />
+          <img src={ABFRL} alt="ABFRL" height={100}/>
+          <img src={ABRL} alt="ABRL" height={100} />
+          <img src={ABC} alt="ABC" height={100} />
+          <img src={century} alt="Century" height={100} />
+          <img src={finance} alt="Finance" height={100}/>
+          <img src={grasim} alt="grasim" height={100} />
+          <img src={emil} alt="mining" height={100} />
+          <img src={trading} alt="trading" height={100} />
+          <img src={vi} alt="Vi" height={100} />
+          {/* Duplicate */}
+          
+        </marquee><br/><br/>
       </div>
     </div>
   );

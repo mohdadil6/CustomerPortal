@@ -1,6 +1,6 @@
 import React from 'react';
 import EnquiryForm from '../EnquiryForm/EnquiryForm';
-import Newsletter from '../Newsletter/Newsletter';
+
 
 function ContactUs() {
   return (
@@ -39,7 +39,7 @@ function ContactUs() {
           </ul>
         </div>
       </div>
-      {/* <Newsletter/> */}
+     
     </>
   );
 }

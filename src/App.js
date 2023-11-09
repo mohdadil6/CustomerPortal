@@ -7,11 +7,12 @@ import Home from './components/Home/Home.js';
 import Contact from './components/Contact/Contact.js';
 import About from './components/About/About.js';
 import Services from './components/Services/Services.js';
-import Media from './components/Media/Media.js';
+import Media from './components/Media/Media.jsx';
 import Nopage from './components/Nopage/Nopage.js';
 import CNavbar from './components/Navbar/CNavbar.js';
 import CFooter from './components/Footer/CFooter.js';
 import Dashboard from './components/Dashboard/Dashboard.js';
+import WhatWeDo from './components/WhatWeDo/SeamexHeader.jsx';
 // import Newsletterpage from './components/Newsletter/Newsletterpage.js';
 // import Testimonials from './components/Testimonials/Testimonials.js';
 function App() {
@@ -37,6 +38,9 @@ function App() {
         <Route path="/media" element={<Media />} />
         <Route path="*" element={<Nopage />} />
         <Route path="/dashboard" element={<Dashboard />}/>
+        <Route path="/whatwedo" element={<WhatWeDo />}/>
+
+        
         {/* <Route path="/newsletter" element={<Newsletterpage />}/> */}
 
         {/* <Route path="/testimonials" element={<Testimonials />}/> */}
